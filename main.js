@@ -12,7 +12,9 @@ async function main() {
 
   console.log(`starting crawl of: ${baseURL}...`);
 
-  await crawlPage(baseURL)
+  const pages = await crawlPage(baseURL, baseURL, {});
+
+  console.log(pages);
 }
 
 main();
