@@ -24,7 +24,7 @@ async function crawlPage(baseURL, currentURL, pages) {
   pages[normalizedURL] = 1;
 
   
-  console.log(`crawling ${currentURL}`);
+//   console.log(`crawling ${currentURL}`);
   let htmlBody = "";
   try {
     const resp = await fetch(currentURL);
